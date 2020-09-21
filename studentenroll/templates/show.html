@@ -1,0 +1,16 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<title>Enrolled Courses Details</title>
+  </head>
+  <body>
+    <table class="table table-striped">
+            <th>Course Enrolled</th>
+        {% for i in student %}
+        <tr>
+            <td>{{ i.c_name }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
