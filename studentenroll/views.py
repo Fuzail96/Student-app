@@ -46,10 +46,6 @@ def show(request):
     return render(request, 'show.html', {'student': crs})
 
 
-def search(request):
-    given_name = request.POST['name']
-    student = StuCourses.objects.filter(fName__icontains=given_name)
-    return render(request, 'show.html', {'student': student})
 
 
 def register(request):
